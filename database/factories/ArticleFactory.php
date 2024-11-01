@@ -26,7 +26,7 @@ class ArticleFactory extends Factory
             'slug' => $this->faker->slug(),
             'excerpt' => $this->faker->paragraph(),
             'body' => $this->faker->paragraphs(3, true),
-            'image_link' => fake()->imageUrl(),
+            'image_link' => $this->faker->randomElement(['/img/data-science.jpg', '/img/network-security.jpg']),
             'writer_id' => $this->faker->randomElement($writerId),
             'category_id' => $this->faker->randomElement($categoryId),
         ];

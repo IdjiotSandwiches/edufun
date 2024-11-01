@@ -19,7 +19,7 @@ class WriterFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'specialize' => "Spesialis " . $this->faker->word(),
-            'avatar' => fake()->imageUrl(),
+            'avatar' => '/img/img-1.jpg',
         ];
     }
 }

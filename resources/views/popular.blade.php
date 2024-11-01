@@ -2,7 +2,7 @@
 @section('title', 'Popular')
 
 @section('content')
-<section>
+<section class="m-4">
     <h1>Popular</h1>
     @foreach ($articles as $article)
         @include('component.card', [
