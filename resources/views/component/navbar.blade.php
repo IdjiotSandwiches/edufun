@@ -27,7 +27,7 @@
                     <a class="nav-link {{ request()->routeIs('aboutUs') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('aboutUs') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Popular</a>
+                    <a class="nav-link {{ request()->routeIs('popular') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('popular') }}">Popular</a>
                 </li>
             </ul>
         </div>

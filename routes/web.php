@@ -33,4 +33,4 @@ Route::get('/about-us', function () {
     return view('aboutus');
 })->name('aboutUs');
 
-Route::get('/popular', [PopularController::class, 'index']);
+Route::get('/popular', [PopularController::class, 'index'])->name('popular');
