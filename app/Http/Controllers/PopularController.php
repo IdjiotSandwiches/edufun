@@ -10,11 +10,11 @@ class PopularController extends Controller
 {
     public function index()
     {
-        $articles = Article::limit(6)->get()->forPage(request('page', 1), 3);
+        $articles = Article::limit(6)->get();
         $articles = new LengthAwarePaginator(
-            $articles,
-            6, // Total articles
-            3, // Articles per page
+            $articles->forPage(request('page', 1), 3),
+            $articles->count(),
+            3,
             request('page', 1),
             ['path' => request()->url(), 'query' => request()->query()]
         );

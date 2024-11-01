@@ -22,10 +22,10 @@ class ArticleFactory extends Factory
         $categoryId = Category::all()->pluck('id');
 
         return [
-            'title' => $this->faker->sentence(mt_rand(2, 8)),
+            'title' => $this->faker->realText(mt_rand(50, 100)),
             'slug' => $this->faker->slug(),
-            'excerpt' => $this->faker->paragraph(),
-            'body' => $this->faker->paragraphs(3, true),
+            'excerpt' => $this->faker->realText(200),
+            'body' => $this->faker->realText(500),
             'image_link' => $this->faker->randomElement(['/img/data-science.jpg', '/img/network-security.jpg']),
             'writer_id' => $this->faker->randomElement($writerId),
             'category_id' => $this->faker->randomElement($categoryId),
