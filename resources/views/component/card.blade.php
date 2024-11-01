@@ -4,7 +4,7 @@
     <div class="card mb-3 border-0">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="{{ asset($article->image_link) }}" class="img-fluid ratio ratio-1x1 rounded" alt="...">
+                <img src="{{ asset($article->image_link) }}" class="img-fluid ratio ratio-1x1 rounded-4" alt="...">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
