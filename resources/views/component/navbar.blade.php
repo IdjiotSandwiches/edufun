@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand col-8" href="{{ route('home') }}">EduFun</a>
+    <div class="container-fluid px-4 py-2">
+        <a class="navbar-brand" href="{{ route('home') }}">EduFun</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse col-4" id="navbarNavDropdown">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
@@ -29,7 +29,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Popular</a>
                 </li>
-
             </ul>
         </div>
     </div>
