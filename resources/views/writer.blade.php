@@ -3,7 +3,7 @@
 
 @section('content')
 <section class="m-4">
-    <h1>Our Writers:</h1>
+    <h2 class="fw-semibold pb-5">Our Writers:</h2>
     <div class="row d-flex justify-content-around">
         @foreach ($writers as $writer)
             @include('component/writer-card', [

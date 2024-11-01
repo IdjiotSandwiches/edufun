@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @include('component.head')
-<body>
+<body class="bg-success-subtle">
     @include('component.navbar')
     @yield('content')
     @include('component.footer')

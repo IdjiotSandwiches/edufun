@@ -28,4 +28,9 @@ Route::controller(WriterController::class)->group(function () {
     Route::get('/writer', 'index')->name('writers');
     Route::get('/writer/{writer}', 'getWriterArticles')->name('getWriterArticles');
 });
+
+Route::get('/about-us', function () {
+    return view('aboutus');
+})->name('aboutUs');
+
 Route::get('/popular', [PopularController::class, 'index']);

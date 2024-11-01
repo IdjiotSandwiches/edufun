@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fw-semibold shadow">
     <div class="container-fluid px-4 py-2">
         <a class="navbar-brand" href="{{ route('home') }}">EduFun</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link {{ request()->routeIs('home') ? 'text-primary text-decoration-underline' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle {{ request()->routeIs('category') ? 'text-primary text-decoration-underline' : '' }}" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Category
                     </a>
@@ -21,13 +21,13 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('writers') }}">Writers</a>
+                    <a class="nav-link {{ request()->routeIs('writers') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('writers') }}">Writers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link {{ request()->routeIs('aboutUs') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('aboutUs') }}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Popular</a>
+                    <a class="nav-link " href="#">Popular</a>
                 </li>
             </ul>
         </div>

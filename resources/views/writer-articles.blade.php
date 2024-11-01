@@ -4,7 +4,7 @@
 @section('content')
 <section class="m-4">
     <div class="mb-3 border-0">
-        <div class="d-flex gap-5 align-items-center">
+        <div class="d-flex gap-5 align-items-center text-center">
             <div class="">
                 <img src="{{ asset($writer->avatar) }}" class="img-fluid shadow ratio ratio-1x1 rounded-circle" alt="..." style="width: 6rem;">
             </div>
