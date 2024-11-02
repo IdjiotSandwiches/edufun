@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('specialize');
+            $table->foreignId('category_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('avatar');
             $table->timestamps();
         });

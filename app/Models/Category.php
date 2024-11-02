@@ -15,4 +15,9 @@ class Category extends Model
     {
         return $this->hasMany(Article::class);
     }
+
+    public function writer()
+    {
+        return $this->hasMany(Writer::class);
+    }
 }

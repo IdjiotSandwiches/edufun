@@ -12,15 +12,11 @@ class CategoryController extends Controller
 {
     public function index($category)
     {
-        $category = Category::where('name', $category)->first();
+        $category = Category::with('article')->where('name', $category)
+            ->first();
 
         if (!$category) abort(404);
 
-        $categoryName = $category->name;
-        $articles = Article::with(['writer', 'category'])
-            ->where('category_id', $category->id)
-            ->get();
-
-        return view('category', compact('categoryName', 'articles'));
+        return view('category', compact('category'));
     }
 }

@@ -20,7 +20,7 @@ use App\Http\Controllers\CategoryController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/article/{article:slug}', [ArticleController::class, 'index'])->name('getArticle');
+Route::get('/article/{article}', [ArticleController::class, 'index'])->name('getArticle');
 
 Route::get('/category/{category}', [CategoryController::class, 'index'])->name('category');
 

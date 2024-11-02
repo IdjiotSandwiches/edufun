@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fw-semibold shadow">
     <div class="container-fluid px-4 py-2">
-        <a class="navbar-brand" href="{{ route('home') }}">EduFun</a>
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="{{ asset('img/edufun_logo.png') }}" alt="" class="w-25">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
