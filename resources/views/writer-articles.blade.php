@@ -17,6 +17,6 @@
         </div>
     </div>
 
-    @include('component.card', ['articles' => $articles])
+    @include('component.card', ['articles' => $writer->article])
 </section>
 @endsection

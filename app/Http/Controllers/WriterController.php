@@ -18,14 +18,11 @@ class WriterController extends Controller
 
     public function getWriterArticles($writer)
     {
-        $writer = Writer::where('name', $writer)->first();
+        $writer = Writer::with(['category', 'article'])->where('name', $writer)
+            ->first();
 
         if (!$writer) abort(404);
 
-        $articles = Article::with(['writer', 'category'])
-            ->where('writer_id', $writer->id)
-            ->get();
-
-        return view('writer-articles', compact('writer', 'articles'));
+        return view('writer-articles', compact('writer'));
     }
 }
