@@ -7,7 +7,7 @@
     <div class="row d-flex justify-content-around">
         @foreach ($writers as $writer)
             @include('component/writer-card', [
-                'imgLink' => '/img/img-1.jpg',
+                'imgLink' => $writer->avatar,
                 'authorName' => $writer->name,
                 'authorDesc' => $writer->specialize,
             ])

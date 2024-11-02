@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Writer;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
