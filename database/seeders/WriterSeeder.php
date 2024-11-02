@@ -14,16 +14,6 @@ class WriterSeeder extends Seeder
      */
     public function run(): void
     {
-        $category = Category::all();
-
-        for ($i = 0; $i < 3; $i++) {
-            $categoryRandom = $category->shuffle()
-                ->first();
-
-            Writer::factory()->create([
-                'specialize' => 'Specialisasi ' . $categoryRandom->name,
-                'category_id' => $categoryRandom->id,
-            ]);
-        }
+        Writer::factory(3)->create();
     }
 }

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +17,13 @@ class WriterFactory extends Factory
      */
     public function definition(): array
     {
+        $category = Category::all()->shuffle()
+            ->first();
+
         return [
             'name' => $this->faker->name(),
+            'specialize' => 'Specialisasi ' . $category->name,
+            'category_id' => $category->id,
             'avatar' => '/img/avatar.jpg',
         ];
     }
