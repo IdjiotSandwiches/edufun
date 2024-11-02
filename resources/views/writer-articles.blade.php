@@ -15,6 +15,8 @@
         </div>
     </div>
 
-    @include('component.card', ['articles' => $writer->article])
+    @foreach ($writer->article as $article)
+        @include('component.card', ['articles' => $article])
+    @endforeach
 </section>
 @endsection

@@ -4,6 +4,8 @@
 @section('content')
 <section class="m-4">
     <h2 class="fw-semibold pb-5">{{ $category->name }}</h2>
-    @include('component.card', ['articles' => $category->article])
+    @foreach ($category->article as $article)
+        @include('component.card', ['articles' => $article])
+    @endforeach
 </section>
 @endsection
