@@ -8,7 +8,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav gap-4">
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('home') ? 'text-primary text-decoration-underline' : '' }}" aria-current="page" href="{{ route('home') }}">Home</a>
                 </li>

@@ -9,10 +9,8 @@
                 <img src="{{ asset($writer->avatar) }}" class="img-fluid shadow ratio ratio-1x1 rounded-circle" alt="..." style="width: 6rem;">
             </div>
             <div class="">
-                <div class="">
-                    <h5 class="">{{ $writer->name }}</h5>
-                    <p class="">{{ $writer->specialize }}</p>
-                </div>
+                <h5 class="fw-semibold">{{ $writer->name }}</h5>
+                <p class="">{{ $writer->specialize }}</p>
             </div>
         </div>
     </div>
