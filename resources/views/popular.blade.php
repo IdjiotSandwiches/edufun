@@ -8,7 +8,7 @@
         @include('component.card', ['articles' => $articles])
     @endforeach
     <div class="d-flex justify-content-center">
-        {{ $articles->links() }}
+        {{ $articles->links('pagination::bootstrap-5') }}
     </div>
 </section>
 @endsection
