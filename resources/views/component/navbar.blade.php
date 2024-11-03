@@ -23,7 +23,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('writers') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('writers') }}">Writers</a>
+                    <a class="nav-link {{ request()->routeIs(['writers', 'getWriterArticles']) ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('writers') }}">Writers</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('aboutUs') ? 'text-primary text-decoration-underline' : '' }}" href="{{ route('aboutUs') }}">About Us</a>
