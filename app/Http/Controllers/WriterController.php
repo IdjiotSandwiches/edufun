@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
 use App\Models\Writer;
-use App\Models\Article;
 use Illuminate\Http\Request;
 
 class WriterController extends Controller
