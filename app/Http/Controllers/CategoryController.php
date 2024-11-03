@@ -2,9 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Carbon\Carbon;
-use App\Models\Writer;
-use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
